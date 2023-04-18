@@ -1,0 +1,27 @@
+{
+  "name": "@w2ui/icons",
+  "version": "1.0.0",
+  "description": "w2 ui icons set.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build:build": "tsx build/build.ts",
+    "build:generate": "tsx build/generate.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "devDependencies": {
+    "@element-plus/icons-svg": "^2.1.0",
+    "@types/fs-extra": "^11.0.1",
+    "camelcase": "^7.0.1",
+    "chalk": "^5.2.0",
+    "consola": "^3.0.2",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^11.1.1",
+    "tsx": "^3.12.6"
+  }
+}
