@@ -1,20 +1,11 @@
-import chalk from "chalk";
 import glob from "fast-glob";
-import consola from "consola";
-import camelcase from 'camelcase'
+import camelcase from "camelcase";
 import { emptyDir } from "fs-extra";
 import { resolve, basename } from "node:path";
 import { readFile, writeFile } from "node:fs/promises";
 
+import { printInfo } from "./utils";
 import { pathComponents } from "./paths";
-
-function chalkInfo(msg: string) {
-  return chalk.greenBright(msg);
-}
-
-function printInfo(msg: string) {
-  consola.info(chalkInfo(msg));
-}
 
 function getName(file: string) {
   const bName = basename(file, ".svg");
@@ -22,7 +13,7 @@ function getName(file: string) {
   return {
     filename: camelcase(bName), // addLocation
     componentName: camelcase(bName, { pascalCase: true }), // AddLocation
-  }
+  };
 }
 
 function getAllSvgFiles() {
@@ -48,11 +39,7 @@ async function transform2SFC(file: string) {
     </script>
   `;
   // 创建sfc组件
-  writeFile(
-    resolve(pathComponents, `${filename}.vue`),
-    sfcContent,
-    "utf-8"
-  );
+  writeFile(resolve(pathComponents, `${filename}.vue`), sfcContent, "utf-8");
 }
 
 function generateEntryFile(files: string[]) {
