@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm run -C ./playground dev",
     "build": "pnpm run -C ./packages/vue build"
   },
   "keywords": [],
@@ -13,5 +14,8 @@
     "@types/node": "^18.15.11",
     "typescript": "^5.0.4",
     "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "@w2ui/icons": "workspace:^"
   }
 }
