@@ -1,9 +1,13 @@
 {
   "name": "@w2ui/icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "w2 ui icons set.",
   "type": "module",
-  "keywords": ["icons", "w2-ui", "practice"],
+  "keywords": [
+    "icons",
+    "w2-ui",
+    "practice"
+  ],
   "author": "lnnlmario",
   "license": "ISC",
   "repository": {
@@ -11,7 +15,9 @@
     "url": "git+https://github.com/lnnlmario/w2-ui-icons.git",
     "directory": "packages/vue"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
