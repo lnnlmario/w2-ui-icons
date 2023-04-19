@@ -3,18 +3,39 @@
   "version": "1.0.0",
   "description": "w2 ui icons set.",
   "type": "module",
+  "keywords": ["icons", "w2-ui", "practice"],
+  "author": "lnnlmario",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnnlmario/w2-ui-icons.git",
+    "directory": "packages/vue"
+  },
+  "files": ["dist"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./*",
+        "./dist/types/*"
+      ]
+    }
+  },
   "scripts": {
     "build": "pnpm run build:generate && run-p build:build build:types",
     "build:build": "tsx build/build.ts",
     "build:generate": "tsx build/generate.ts",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "peerDependencies": {
     "vue": "^3.2.0"
   },
