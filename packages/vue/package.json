@@ -1,7 +1,7 @@
 {
-  "name": "@w2ui/icons",
+  "name": "@lnnlmario/icons",
   "version": "1.0.1",
-  "description": "w2 ui icons set.",
+  "description": "lnnlmario ui icons set.",
   "type": "module",
   "keywords": [
     "icons",
@@ -35,6 +35,9 @@
         "./dist/types/*"
       ]
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "build": "pnpm run build:generate && run-p build:build build:types",

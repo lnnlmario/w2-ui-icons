@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@w2ui/icons": "workspace:*",
     "vue": "^3.2.47"
   },
   "devDependencies": {
