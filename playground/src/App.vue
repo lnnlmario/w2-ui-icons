@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as icons from '@w2ui/icons'
+import * as icons from '@lnnlmario/icons'
 </script>
 
 <template>
